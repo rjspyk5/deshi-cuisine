@@ -1,12 +1,12 @@
 [
     {
-      "img": "https://example.com/chitoi_pitha.jpg",
+      "img": "https://i.ibb.co/gwgzx50/chitoy.jpg",
       "id": "1",
       "name": "Chitoi Pitha",
       "description": "Traditional rice flour pancakes, typically served with molasses or coconut.",
       "ingredients": ["2 cups rice flour", "1 cup coconut milk", "1/2 cup sugar", "1/4 tsp salt"],
-      "time": "40 min",
-      "calories": "230 calories"
+      "time": "40",
+      "calories": "230"
     },
     {
       "img": "https://example.com/vapa_pitha.jpg",
@@ -14,8 +14,8 @@
       "name": "Vapa Pitha",
       "description": "Steamed rice cakes, often sweetened with jaggery or sugar.",
       "ingredients": ["2 cups rice flour", "1 cup jaggery", "1/2 cup coconut, grated", "Ghee for greasing"],
-      "time": "50 min",
-      "calories": "280 calories"
+      "time": "50",
+      "calories": "280"
     },
     {
       "img": "https://example.com/shirgoja.jpg",
@@ -23,8 +23,8 @@
       "name": "Shirgoja",
       "description": "Savory rice cakes made with a mixture of lentils and rice, fried until crispy.",
       "ingredients": ["1 cup rice", "1/2 cup lentils", "1 onion, finely chopped", "2 green chilies, finely chopped", "Salt to taste", "Oil for frying"],
-      "time": "60 min",
-      "calories": "320 calories"
+      "time": "60",
+      "calories": "320"
     },
     {
       "img": "https://example.com/patishapta_pitha.jpg",
@@ -32,8 +32,8 @@
       "name": "Patishapta Pitha",
       "description": "Thin crepes filled with coconut, khoya, or jaggery filling, often served during festivals.",
       "ingredients": ["1 cup rice flour", "1/2 cup semolina", "1/2 cup sugar", "1/2 cup coconut, grated", "1/2 cup khoya", "Ghee for frying"],
-      "time": "45 min",
-      "calories": "260 calories"
+      "time": "45",
+      "calories": "260"
     },
     {
       "img": "https://example.com/puli_pitha.jpg",
@@ -41,8 +41,8 @@
       "name": "Puli Pitha",
       "description": "Dumplings made with rice flour dough, filled with sweet or savory stuffing, and steamed or boiled.",
       "ingredients": ["2 cups rice flour", "1 cup grated coconut", "1/2 cup jaggery", "1/4 tsp cardamom powder", "Salt to taste"],
-      "time": "55 min",
-      "calories": "300 calories"
+      "time": "55",
+      "calories": "300"
     },
     {
       "img": "https://example.com/pua_pitha.jpg",
@@ -50,35 +50,27 @@
       "name": "Pua Pitha",
       "description": "Deep-fried fritters made with a batter of rice flour, jaggery, and grated coconut.",
       "ingredients": ["2 cups rice flour", "1 cup jaggery", "1/2 cup coconut, grated", "1/2 tsp fennel seeds", "Oil for frying"],
-      "time": "30 min",
-      "calories": "200 calories"
+      "time": "30",
+      "calories": "200"
     },
-    {
-      "img": "https://example.com/choi_pitha.jpg",
-      "id": "7",
-      "name": "Choi Pitha",
-      "description": "Leaf-shaped rice cakes, often flavored with coconut and jaggery.",
-      "ingredients": ["2 cups rice flour", "1 cup jaggery", "1/2 cup coconut, grated", "Banana leaves for shaping", "Ghee for frying"],
-      "time": "50 min",
-      "calories": "250 calories"
-    },
+    
     {
       "img": "https://example.com/mera_pitha.jpg",
-      "id": "8",
+      "id": "7",
       "name": "Mera Pitha",
       "description": "Traditional fried rice cakes, sweetened with jaggery or sugar syrup.",
       "ingredients": ["2 cups rice flour", "1 cup jaggery", "1/2 cup coconut, grated", "1/2 tsp cardamom powder", "Oil for frying"],
-      "time": "35 min",
-      "calories": "270 calories"
+      "time": "35",
+      "calories": "270"
     },
     {
       "img": "https://example.com/bhapa_pitha.jpg",
-      "id": "9",
+      "id": "8",
       "name": "Bhapa Pitha",
       "description": "Steamed rice cakes, often stuffed with coconut and jaggery mixture.",
       "ingredients": ["2 cups rice flour", "1 cup jaggery", "1/2 cup coconut, grated", "1/2 tsp cardamom powder", "Banana leaves for wrapping"],
-      "time": "40 min",
-      "calories": "220 calories"
+      "time": "40",
+      "calories": "220"
     }
   ]
   

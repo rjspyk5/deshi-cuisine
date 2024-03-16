@@ -17,7 +17,10 @@ export const Recipe = () => {
     <div>
       <RecipeHeading></RecipeHeading>
       <div className="grid grid-cols-1 lg:grid-cols-10">
-        <div className="lg:col-span-6 order-2 lg:order-1">h</div>
+        <div className="lg:col-span-6 order-2 lg:order-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+          {recipeData &&
+            recipeData.map((el) => <ItemCard singleData={el} key={el.id} />)}
+        </div>
         <div className="order-1 lg:order-2"> </div>
       </div>
     </div>
