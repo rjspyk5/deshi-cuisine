@@ -1,7 +1,7 @@
 export const Navbar = () => {
   return (
     <nav>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 px-0 mx-0">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
