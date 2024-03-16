@@ -1,5 +1,9 @@
-import React from "react";
+import { Recipe } from "./Recipe/Recipe";
 
 export const Main = () => {
-  return <main>Main</main>;
+  return (
+    <main>
+      <Recipe></Recipe>
+    </main>
+  );
 };
