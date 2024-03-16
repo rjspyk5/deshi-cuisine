@@ -1,8 +1,9 @@
 import React from "react";
+import { CustomButton } from "../../../assets/CustomButton";
 
 export const CookingItem = ({ button }) => {
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto ">
       <table className="table">
         {/* head */}
         <thead>
@@ -21,7 +22,7 @@ export const CookingItem = ({ button }) => {
             <td>Cy Ganderton</td>
             <td>Quality Control Specialist</td>
             <td>Blue</td>
-            {button && <td>Prepraing</td>}
+            {button && <CustomButton name={"Prepraing"} />}
           </tr>
           {/* row 2 */}
           <tr className="border-none">
@@ -29,7 +30,7 @@ export const CookingItem = ({ button }) => {
             <td>Hart Hagerty</td>
             <td>Desktop Support Technician</td>
             <td>Purple</td>
-            {button && <td>Prepraing</td>}
+            {button && <CustomButton name={"Prepraing"} />}
           </tr>
         </tbody>
       </table>

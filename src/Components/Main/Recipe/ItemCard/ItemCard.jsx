@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { CustomButton } from "../../../../assets/CustomButton";
 
 export const ItemCard = ({ singleData }) => {
   const { name, description, ingredients, time, calories, img } = singleData;
@@ -71,7 +72,7 @@ export const ItemCard = ({ singleData }) => {
 
         {/* time end */}
         {/* Cook button */}
-        <button>Want to cook</button>
+        <CustomButton name={"Want to cook"} />
       </div>
     </div>
   );
