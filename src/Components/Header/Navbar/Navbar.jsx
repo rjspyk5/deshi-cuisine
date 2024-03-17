@@ -1,7 +1,7 @@
 export const Navbar = () => {
   return (
     <nav>
-      <div className="navbar bg-base-100 px-0 mx-0">
+      <div className="navbar my-5 bg-base-100 px-0 mx-0">
         <div className="navbar-start">
           <div className="dropdown">
             <div

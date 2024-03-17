@@ -3,7 +3,7 @@ import chefSalmon from "../../../assets/img/chef-photo=one.jpg";
 export const Banner = () => {
   return (
     <div
-      className="hero mt-10 min-h-[300px] md:min-h-[500px] bg-contain rounded-3xl"
+      className="hero min-h-[300px] md:min-h-[500px] bg-contain rounded-3xl"
       style={{
         backgroundImage: `url(${chefSalmon})`,
       }}
