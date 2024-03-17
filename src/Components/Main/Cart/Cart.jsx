@@ -9,9 +9,9 @@ export const Cart = ({
 }) => {
   return (
     <>
-      <div className="py-8 border">
-        <h1 className="mx-auto text-center max-w-[350px] border-b">
-          Want to cook {cartIteams?.length}
+      <div className="py-8 border border-[#28282826] rounded-2xl">
+        <h1 className="mx-auto text-center font-semibold text-2xl max-w-[350px] pb-3 border-b border-[#28282826]">
+          Want to cook : {cartIteams?.length}
         </h1>
         {cartIteams?.length > 0 && (
           <CookingItemContainer
@@ -19,19 +19,17 @@ export const Cart = ({
             cartIteams={cartIteams}
           />
         )}
-        <h1 className="mx-auto text-center max-w-[350px] border-b">
-          Currently Cooking {currentlyCookingCart?.length}
+        <h1 className="mx-auto text-center max-w-[350px] font-semibold text-2xl pb-3 pt-8 border-b border-[#28282826]">
+          Currently Cooking : {currentlyCookingCart?.length}
         </h1>
 
         {currentlyCookingCart.length > 0 && (
           <>
-            <CookingItemContainer cartIteams={currentlyCookingCart} />
-            <div className="grid grid-cols-2">
-              <div className="col-start-2 flex gap-5">
-                <h1>Total Time {totalTime}</h1>
-                <h1>Total Calorie {totalCalorie}</h1>
-              </div>
-            </div>
+            <CookingItemContainer
+              time={totalTime}
+              calorie={totalCalorie}
+              cartIteams={currentlyCookingCart}
+            />
           </>
         )}
       </div>

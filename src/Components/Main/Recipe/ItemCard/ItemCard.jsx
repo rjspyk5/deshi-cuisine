@@ -17,7 +17,7 @@ export const ItemCard = ({ singleData, handleClick }) => {
         {/* ingredients */}
         <div className="space-y-4 pb-4 pt-6 border-b border-[#2828281A]">
           <h1 className="font-medium text-lg lexendFont">
-            Ingredients :{ingredients.length}
+            Ingredients : {ingredients.length}
           </h1>
           <ul className="space-y-4 list-disc ps-4 text-[#878787]">
             {ingredients.map((el, iDx) => (
@@ -77,7 +77,7 @@ export const ItemCard = ({ singleData, handleClick }) => {
         <button
           onClick={() => handleClick({ name, time, calories, id })}
           type="button"
-          className="bg-main text-lg lexendFont  text-[#150B2B] text-[white] hover:bg-[#559433] font-medium py-2 px-4 rounded-full"
+          className="bg-main  text-[#150B2B] hover:transition-colors duration-300  hover:bg-[#4cd77d] font-semibold py-2 px-4 rounded-full"
         >
           Want to cook
         </button>
