@@ -16,7 +16,7 @@ export const ItemCard = ({ singleData, handleClick }) => {
         </div>
         {/* ingredients */}
         <div className="space-y-4 pb-4 pt-6 border-b border-[#2828281A]">
-          <h1 className="font-medium text-lg lexendFont">
+          <h1 className="font-semibold text-lg lexendFont">
             Ingredients : {ingredients.length}
           </h1>
           <ul className="space-y-4 list-disc ps-4 text-[#878787]">

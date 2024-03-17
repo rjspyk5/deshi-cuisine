@@ -1,5 +1,3 @@
-import React from "react";
-
 export const RecipeHeading = () => {
   return (
     <div className="text-center space-y-6 mx-auto max-w-4xl md:mb-12 mb-8 mt-16 md:mt-24">
