@@ -22,13 +22,18 @@ export const Cart = ({
         <h1 className="mx-auto text-center max-w-[350px] border-b">
           Currently Cooking {currentlyCookingCart?.length}
         </h1>
-        <CookingItemContainer cartIteams={currentlyCookingCart} />
-        <div className="grid grid-cols-2">
-          <div className="col-start-2 flex gap-5">
-            <h1>Total Time {totalTime}</h1>
-            <h1>Total Calorie {totalCalorie}</h1>
-          </div>
-        </div>
+
+        {currentlyCookingCart.length > 0 && (
+          <>
+            <CookingItemContainer cartIteams={currentlyCookingCart} />
+            <div className="grid grid-cols-2">
+              <div className="col-start-2 flex gap-5">
+                <h1>Total Time {totalTime}</h1>
+                <h1>Total Calorie {totalCalorie}</h1>
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </>
   );
