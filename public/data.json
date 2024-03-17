@@ -1,25 +1,7 @@
 [
     {
-      "img": "https://i.ibb.co/gwgzx50/chitoy.jpg",
+      "img": "https://i.ibb.co/V2nVnYy/mqdefault.jpg",
       "id": "1",
-      "name": "Chitoi Pitha",
-      "description": "Traditional rice flour pancakes, typically served with molasses or coconut.",
-      "ingredients": ["2 cups rice flour", "1 cup coconut milk", "1/2 cup sugar", "1/4 tsp salt"],
-      "time": "40",
-      "calories": "230"
-    },
-    {
-      "img": "https://example.com/vapa_pitha.jpg",
-      "id": "2",
-      "name": "Vapa Pitha",
-      "description": "Steamed rice cakes, often sweetened with jaggery or sugar.",
-      "ingredients": ["2 cups rice flour", "1 cup jaggery", "1/2 cup coconut, grated", "Ghee for greasing"],
-      "time": "50",
-      "calories": "280"
-    },
-    {
-      "img": "https://example.com/shirgoja.jpg",
-      "id": "3",
       "name": "Shirgoja",
       "description": "Savory rice cakes made with a mixture of lentils and rice, fried until crispy.",
       "ingredients": ["1 cup rice", "1/2 cup lentils", "1 onion, finely chopped", "2 green chilies, finely chopped", "Salt to taste", "Oil for frying"],
@@ -27,26 +9,18 @@
       "calories": "320"
     },
     {
-      "img": "https://example.com/patishapta_pitha.jpg",
-      "id": "4",
+      "img": "https://i.ibb.co/7NkFkzN/img81544-whqc-768x512q80.jpg",
+      "id": "2",
       "name": "Patishapta Pitha",
-      "description": "Thin crepes filled with coconut, khoya, or jaggery filling, often served during festivals.",
+      "description": "Thin crepes filled with coconut, khoya, or jaggery filling.",
       "ingredients": ["1 cup rice flour", "1/2 cup semolina", "1/2 cup sugar", "1/2 cup coconut, grated", "1/2 cup khoya", "Ghee for frying"],
       "time": "45",
       "calories": "260"
     },
+    
     {
-      "img": "https://example.com/puli_pitha.jpg",
-      "id": "5",
-      "name": "Puli Pitha",
-      "description": "Dumplings made with rice flour dough, filled with sweet or savory stuffing, and steamed or boiled.",
-      "ingredients": ["2 cups rice flour", "1 cup grated coconut", "1/2 cup jaggery", "1/4 tsp cardamom powder", "Salt to taste"],
-      "time": "55",
-      "calories": "300"
-    },
-    {
-      "img": "https://example.com/pua_pitha.jpg",
-      "id": "6",
+      "img": "https://i.ibb.co/qWdN7L7/ENCs-Uk-ZUc-AA3v-KG.jpg",
+      "id": "3",
       "name": "Pua Pitha",
       "description": "Deep-fried fritters made with a batter of rice flour, jaggery, and grated coconut.",
       "ingredients": ["2 cups rice flour", "1 cup jaggery", "1/2 cup coconut, grated", "1/2 tsp fennel seeds", "Oil for frying"],
@@ -55,8 +29,8 @@
     },
     
     {
-      "img": "https://example.com/mera_pitha.jpg",
-      "id": "7",
+      "img": "https://i.ibb.co/4d52PCD/hqdefault.jpg",
+      "id": "4",
       "name": "Mera Pitha",
       "description": "Traditional fried rice cakes, sweetened with jaggery or sugar syrup.",
       "ingredients": ["2 cups rice flour", "1 cup jaggery", "1/2 cup coconut, grated", "1/2 tsp cardamom powder", "Oil for frying"],
@@ -64,13 +38,39 @@
       "calories": "270"
     },
     {
-      "img": "https://example.com/bhapa_pitha.jpg",
-      "id": "8",
+      "img": "https://i.ibb.co/hF5GsSk/vapa-pitha-p-1912201331.jpg",
+      "id": "5",
       "name": "Bhapa Pitha",
       "description": "Steamed rice cakes, often stuffed with coconut and jaggery mixture.",
       "ingredients": ["2 cups rice flour", "1 cup jaggery", "1/2 cup coconut, grated", "1/2 tsp cardamom powder", "Banana leaves for wrapping"],
       "time": "40",
       "calories": "220"
+    },{
+      "img": "https://i.ibb.co/DM421n1/maxresdefault-1.jpg",
+      "id": "6",
+      "name": "Puli Pitha",
+      "description": "Dumplings made with rice flour dough, filled with sweet or savory stuffing, and steamed or boiled.",
+      "ingredients": ["2 cups rice flour", "1 cup grated coconut", "1/2 cup jaggery", "1/4 tsp cardamom powder", "Salt to taste"],
+      "time": "55",
+      "calories": "300"
+    },
+    {
+      "img": "https://i.ibb.co/hWY21zh/chitoy.jpg",
+      "id": "7",
+      "name": "Chitoi Pitha",
+      "description": "Traditional rice flour pancakes, typically served with molasses or coconut.",
+      "ingredients": ["2 cups rice flour", "1 cup coconut milk", "1/2 cup sugar", "1/4 tsp salt"],
+      "time": "40",
+      "calories": "230"
+    },
+    {
+      "img": "https://i.ibb.co/K6FpzPL/maxresdefault-2.jpg",
+      "id": "9",
+      "recipe_name": "Pakon Pitha",
+    "description": "Savory rice cakes typically made with ground rice and lentils.",
+    "ingredients": ["1 cup rice flour", "1/2 cup lentils", "Salt to taste", "Oil for frying"],
+    "time": "40",
+    "calories": "220"
     }
   ]
   

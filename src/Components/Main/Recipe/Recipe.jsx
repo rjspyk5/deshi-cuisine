@@ -30,7 +30,7 @@ export const Recipe = () => {
     settotalTimeForCook(totalTimeForCook + parseInt(iteam.time));
   };
   return (
-    <div>
+    <div className="pb-24">
       <RecipeHeading></RecipeHeading>
       <div className="grid grid-cols-1 lg:grid-cols-10 gap-6">
         <div className="lg:col-span-6 order-2 lg:order-1 grid grid-cols-1 md:grid-cols-2 gap-6">

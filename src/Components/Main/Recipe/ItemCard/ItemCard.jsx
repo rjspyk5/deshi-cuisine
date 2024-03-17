@@ -4,9 +4,13 @@ export const ItemCard = ({ singleData, handleClick }) => {
   const { name, description, ingredients, time, calories, img, id } =
     singleData;
   return (
-    <div className="card card-compact  bg-base-100 shadow-xl p-6 space-y-6 firaFont">
+    <div className="card card-compact  border-[#28282833] border bg-base-100 s p-6 space-y-6 firaFont">
       <figure>
-        <img className="rounded-2xl" src={img} alt="not available" />
+        <img
+          className="rounded-2xl h-[160px] w-full"
+          src={img}
+          alt="not available"
+        />
       </figure>
       <div>
         {/* title */}
