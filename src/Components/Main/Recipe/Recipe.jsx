@@ -14,16 +14,29 @@ export const Recipe = () => {
     f();
   }, []);
 
+  const [cartIteams, setcartIteams] = useState([]);
+  const handleWantToCook = (itemDetails) => {
+    if (!cartIteams.find((el) => el.id === itemDetails.id)) {
+      setcartIteams([...cartIteams, itemDetails]);
+    }
+  };
+
   return (
     <div>
       <RecipeHeading></RecipeHeading>
       <div className="grid grid-cols-1 lg:grid-cols-10 gap-6">
         <div className="lg:col-span-6 order-2 lg:order-1 grid grid-cols-1 md:grid-cols-2 gap-6">
           {recipeData &&
-            recipeData.map((el) => <ItemCard singleData={el} key={el.id} />)}
+            recipeData.map((el) => (
+              <ItemCard
+                handleClick={handleWantToCook}
+                singleData={el}
+                key={el.id}
+              />
+            ))}
         </div>
         <div className="order-1 lg:col-span-4 lg:order-2 ">
-          <Cart></Cart>
+          <Cart cartIteams={cartIteams}></Cart>
         </div>
       </div>
     </div>
