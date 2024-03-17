@@ -1,4 +1,5 @@
 import { CookingIteam } from "./CookingIteam";
+import PropTypes from "prop-types";
 
 export const CookingItemContainer = ({ button, cartIteams, time, calorie }) => {
   return (
@@ -43,4 +44,11 @@ export const CookingItemContainer = ({ button, cartIteams, time, calorie }) => {
       </table>
     </div>
   );
+};
+CookingItemContainer.propTypes = {
+  button: PropTypes.func,
+  cartIteams: PropTypes.array,
+  time: PropTypes.number,
+
+  calorie: PropTypes.number,
 };

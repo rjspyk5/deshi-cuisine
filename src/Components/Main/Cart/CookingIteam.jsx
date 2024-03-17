@@ -1,5 +1,4 @@
-import React from "react";
-import { CustomButton } from "../../../assets/CustomButton";
+import PropTypes from "prop-types";
 
 export const CookingIteam = ({ button, item, serial }) => {
   const { name, time, calories } = item;
@@ -22,4 +21,9 @@ export const CookingIteam = ({ button, item, serial }) => {
       )}
     </tr>
   );
+};
+CookingIteam.propTypes = {
+  button: PropTypes.func,
+  item: PropTypes.object,
+  serial: PropTypes.number,
 };
