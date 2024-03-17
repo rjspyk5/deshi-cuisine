@@ -38,7 +38,9 @@ export const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Bangladeshi Pitha</a>
+          <a className="btn btn-ghost text-xl md:text-3xl font-bold">
+            Deshi Cuisine
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu text-[#150B2BB2] menu-horizontal px-1">
@@ -56,8 +58,8 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end ">
-          <label className="input bg-[#150B2B0D] rounded-full flex items-center gap-2">
+        <div className="navbar-end gap-4">
+          <label className="px-2 w-auto h-10  bg-[#150B2B0D] rounded-full flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -70,31 +72,32 @@ export const Navbar = () => {
                 clipRule="evenodd"
               />
             </svg>
-            <input type="text" placeholder="Search" />
+            <input
+              className="bg-[#F3F3F4] outline-none w-16 md:w-auto"
+              type="text"
+              placeholder="Search"
+            />
           </label>
 
-          <div
-            tabIndex={0}
-            role="button"
-            className="btn btn-ghost btn-circle bg-green-500"
+          <button
+            type="button"
+            className=" bg-main btn-ghost w-10 h-10 rounded-full flex items-center justify-center"
           >
-            <div className="w-10 rounded-full flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                />
-              </svg>
-            </div>
-          </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </nav>

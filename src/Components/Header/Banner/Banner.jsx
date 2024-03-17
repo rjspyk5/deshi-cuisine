@@ -1,4 +1,3 @@
-import chefYellow from "../../../assets/img/chef-photo-yellow.jpg";
 import chefSalmon from "../../../assets/img/chef-photo=one.jpg";
 
 export const Banner = () => {
