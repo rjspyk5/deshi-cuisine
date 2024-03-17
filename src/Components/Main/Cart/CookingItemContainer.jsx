@@ -8,10 +8,10 @@ export const CookingItemContainer = ({ button, cartIteams, time, calorie }) => {
         <thead>
           <tr className="border-none firaFont font-medium text-[#878787] text-sm">
             <th></th>
-            <th>Name</th>
+            <th className="px-1 md:px-3">Name</th>
             <th>Time</th>
-            <th>Calories</th>
-            {button && <th></th>}
+            <th className="px-1 md:px-3">Calories</th>
+            {button && <th className="px-1 md:px-3"></th>}
           </tr>
         </thead>
         <tbody className="bg-[#28282808]">
@@ -34,7 +34,7 @@ export const CookingItemContainer = ({ button, cartIteams, time, calorie }) => {
                 Total Time =<br />
                 {time} minutes
               </td>
-              <td>
+              <td className="px-1 md:px-3">
                 Total Calories =<br />
                 {calorie} calories
               </td>
