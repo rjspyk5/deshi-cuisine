@@ -1,5 +1,5 @@
 import { CookingItemContainer } from "./CookingItemContainer";
-
+import PropTypes from "prop-types";
 export const Cart = ({
   cartIteams,
   handlePrepraingButton,
@@ -35,4 +35,11 @@ export const Cart = ({
       </div>
     </>
   );
+};
+Cart.propTypes = {
+  cartIteams: PropTypes.array,
+  handlePrepraingButton: PropTypes.func,
+  currentlyCookingCart: PropTypes.array,
+  totalTime: PropTypes.number,
+  totalCalorie: PropTypes.number,
 };
