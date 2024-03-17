@@ -26,16 +26,8 @@ export const Recipe = () => {
     const updateCartIteams = cartIteams.filter((el) => el.id !== iteam.id);
     setcartIteams([...updateCartIteams]);
     setcurrentlyCookingCart([...currentlyCookingCart, iteam]);
-    const time = currentlyCookingCart.reduce(
-      (acc, cur) => acc + parseInt(cur.time),
-      0
-    );
-    settotalTimeForCook(time);
-    const calorie = currentlyCookingCart.reduce(
-      (acc, cur) => acc + parseInt(cur.calories),
-      0
-    );
-    settotalCalorieGain(calorie);
+    settotalCalorieGain(totalCalorieGain + parseInt(iteam.calories));
+    settotalTimeForCook(totalTimeForCook + parseInt(iteam.time));
   };
   return (
     <div>
