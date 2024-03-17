@@ -43,12 +43,13 @@ export const Navbar = () => {
             </ul>
           </div>
 
-          <button
+          <a
+            href="index.html"
             type="button"
-            className="p-1 rounded-md btn-ghost text-lg md:text-3xl font-bold"
+            className="p-1 cursor-pointer rounded-md btn-ghost text-lg md:text-3xl font-bold"
           >
             Deshi Cuisine
-          </button>
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu text-[#150B2BB2] menu-horizontal px-1">

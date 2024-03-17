@@ -6,8 +6,8 @@ export const CookingIteam = ({ button, item, serial }) => {
     <tr className="border-none flex-none items-center firaFont text-[#282828B2]">
       <td className="font-semibold px-1 md:px-3 text-[#282828CC]">{serial}</td>
       <td className="px-1 md:px-3">{name}</td>
-      <td>{time}</td>
-      <td className="px-1 md:px-3">{calories}</td>
+      <td>{time} minutes</td>
+      <td className="px-1 md:px-3">{calories} calories</td>
       {button && (
         <td className="px-1 md:px-3">
           <button
