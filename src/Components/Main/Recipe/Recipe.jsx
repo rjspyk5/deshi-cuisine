@@ -19,6 +19,24 @@ export const Recipe = () => {
       setcartIteams([...cartIteams, itemDetails]);
     }
   };
+  const [totalTimeForCook, settotalTimeForCook] = useState(0);
+  const [totalCalorieGain, settotalCalorieGain] = useState(0);
+  const [currentlyCookingCart, setcurrentlyCookingCart] = useState([]);
+  const handlePrepraingButton = (iteam) => {
+    const updateCartIteams = cartIteams.filter((el) => el.id !== iteam.id);
+    setcartIteams([...updateCartIteams]);
+    setcurrentlyCookingCart([...currentlyCookingCart, iteam]);
+    const time = currentlyCookingCart.reduce(
+      (acc, cur) => acc + parseInt(cur.time),
+      0
+    );
+    settotalTimeForCook(time);
+    const calorie = currentlyCookingCart.reduce(
+      (acc, cur) => acc + parseInt(cur.calories),
+      0
+    );
+    settotalCalorieGain(calorie);
+  };
   return (
     <div>
       <RecipeHeading></RecipeHeading>
@@ -34,7 +52,13 @@ export const Recipe = () => {
             ))}
         </div>
         <div className="order-1 lg:col-span-4 lg:order-2 ">
-          <Cart cartIteams={cartIteams}></Cart>
+          <Cart
+            totalTime={totalTimeForCook}
+            totalCalorie={totalCalorieGain}
+            handlePrepraingButton={handlePrepraingButton}
+            currentlyCookingCart={currentlyCookingCart}
+            cartIteams={cartIteams}
+          ></Cart>
         </div>
       </div>
     </div>

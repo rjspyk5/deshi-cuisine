@@ -1,7 +1,8 @@
 import React from "react";
 import { CustomButton } from "../../../assets/CustomButton";
 
-export const CookingIteam = ({ button, item: { name, time, calories } }) => {
+export const CookingIteam = ({ button, item }) => {
+  const { name, time, calories } = item;
   return (
     <tr className="border-none flex-none items-center">
       <td>1</td>
@@ -10,7 +11,13 @@ export const CookingIteam = ({ button, item: { name, time, calories } }) => {
       <td>{calories}</td>
       {button && (
         <td>
-          <CustomButton name={"Prepraing"} />
+          <button
+            onClick={() => button(item)}
+            type="button"
+            className="bg-main  text-[#150B2B] hover:text-[white] hover:bg-[#559433] font-medium py-2 px-4 rounded-full"
+          >
+            Prepraing
+          </button>
         </td>
       )}
     </tr>
