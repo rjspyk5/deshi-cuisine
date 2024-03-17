@@ -13,7 +13,7 @@ export const CookingIteam = ({ button, item, serial }) => {
           <button
             onClick={() => button(item)}
             type="button"
-            className="bg-main  text-[#150B2B] hover:transition-colors duration-300  hover:bg-[#4cd77d] font-semibold py-2 px-3 rounded-full"
+            className="bg-main  text-[#150B2B] hover:transition-colors duration-300  btn-ghost font-semibold py-2 px-3 rounded-full"
           >
             Prepraing
           </button>
