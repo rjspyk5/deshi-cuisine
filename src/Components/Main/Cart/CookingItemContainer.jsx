@@ -15,8 +15,15 @@ export const CookingItemContainer = ({ button, cartIteams, time, calorie }) => {
         </thead>
         <tbody className="bg-[#28282808]">
           {cartIteams &&
-            cartIteams.map((el) => {
-              return <CookingIteam key={el?.id} button={button} item={el} />;
+            cartIteams.map((el, iDx) => {
+              return (
+                <CookingIteam
+                  serial={iDx + 1}
+                  key={el?.id}
+                  button={button}
+                  item={el}
+                />
+              );
             })}
           {!button && (
             <tr className="border-none bg-[white] flex-none items-center font-semibold text-[#282828CC]">

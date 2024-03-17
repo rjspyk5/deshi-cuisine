@@ -1,11 +1,11 @@
 import React from "react";
 import { CustomButton } from "../../../assets/CustomButton";
 
-export const CookingIteam = ({ button, item }) => {
+export const CookingIteam = ({ button, item, serial }) => {
   const { name, time, calories } = item;
   return (
     <tr className="border-none flex-none items-center firaFont text-[#282828B2]">
-      <td>1</td>
+      <td className="font-semibold text-[#282828CC]">{serial}</td>
       <td>{name}</td>
       <td>{time}</td>
       <td>{calories}</td>
