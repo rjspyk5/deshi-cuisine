@@ -7,7 +7,7 @@ export const ItemCard = ({ singleData, handleClick }) => {
     <div className="card card-compact  border-[#28282833] border bg-base-100 s p-6 space-y-6 firaFont">
       <figure>
         <img
-          className="rounded-2xl h-[160px] w-full"
+          className="rounded-2xl h-[250px]  lg:h-[160px] w-full"
           src={img}
           alt="not available"
         />

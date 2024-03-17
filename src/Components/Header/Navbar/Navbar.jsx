@@ -4,7 +4,11 @@ export const Navbar = () => {
       <div className="navbar bg-base-100 px-0 mx-0">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div
+              tabIndex={0}
+              role="button"
+              className="p-2 rounded-md btn-ghost lg:hidden"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -38,9 +42,13 @@ export const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl md:text-3xl font-bold">
+
+          <button
+            type="button"
+            className="p-1 rounded-md btn-ghost text-lg md:text-3xl font-bold"
+          >
             Deshi Cuisine
-          </a>
+          </button>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu text-[#150B2BB2] menu-horizontal px-1">
@@ -58,13 +66,13 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end gap-4">
+        <div className="navbar-end gap-2 md:gap-4">
           <label className="px-2 w-auto h-10  bg-[#150B2B0D] rounded-full flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
               fill="currentColor"
-              className="w-6 h-6 opacity-70"
+              className="w-5 md:w-6 md:h-6 h-5 opacity-70"
             >
               <path
                 fillRule="evenodd"

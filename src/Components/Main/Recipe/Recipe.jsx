@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { RecipeHeading } from "./RecipeHeading";
 import { ItemCard } from "./ItemCard/ItemCard";
 import { Cart } from "../Cart/Cart";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const Recipe = () => {
   const [recipeData, setrecipeData] = useState([]);
@@ -13,10 +15,19 @@ export const Recipe = () => {
     };
     f();
   }, []);
+  const notify = () =>
+    toast.error("Sorry,maximum order limit have been reached", {
+      position: "top-center",
+      autoClose: 3000,
+
+      theme: "colored",
+    });
   const [cartIteams, setcartIteams] = useState([]);
   const handleWantToCook = (itemDetails) => {
     if (!cartIteams.find((el) => el.id === itemDetails.id)) {
       setcartIteams([...cartIteams, itemDetails]);
+    } else {
+      notify();
     }
   };
   const [totalTimeForCook, settotalTimeForCook] = useState(0);
@@ -31,6 +42,7 @@ export const Recipe = () => {
   };
   return (
     <div className="pb-24">
+      <ToastContainer />
       <RecipeHeading></RecipeHeading>
       <div className="grid grid-cols-1 lg:grid-cols-10 gap-6">
         <div className="lg:col-span-6 order-2 lg:order-1 grid grid-cols-1 md:grid-cols-2 gap-6">
