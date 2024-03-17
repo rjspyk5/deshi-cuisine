@@ -13,14 +13,12 @@ export const Recipe = () => {
     };
     f();
   }, []);
-
   const [cartIteams, setcartIteams] = useState([]);
   const handleWantToCook = (itemDetails) => {
     if (!cartIteams.find((el) => el.id === itemDetails.id)) {
       setcartIteams([...cartIteams, itemDetails]);
     }
   };
-
   return (
     <div>
       <RecipeHeading></RecipeHeading>

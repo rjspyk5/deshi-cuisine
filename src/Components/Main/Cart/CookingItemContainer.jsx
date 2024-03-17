@@ -1,5 +1,4 @@
-import React from "react";
-import { CustomButton } from "../../../assets/CustomButton";
+import { CookingIteam } from "./CookingIteam";
 
 export const CookingItemContainer = ({ button, cartIteams }) => {
   return (
@@ -18,19 +17,7 @@ export const CookingItemContainer = ({ button, cartIteams }) => {
         <tbody className="bg-[#28282808]">
           {cartIteams &&
             cartIteams.map((el) => {
-              return (
-                <tr key={el.id} className="border-none flex-none items-center">
-                  <td>1</td>
-                  <td>Cy Ganderton</td>
-                  <td>Quality Control Specialist</td>
-                  <td>Blue</td>
-                  {button && (
-                    <td>
-                      <CustomButton name={"Prepraing"} />
-                    </td>
-                  )}
-                </tr>
-              );
+              return <CookingIteam key={el?.id} button={button} item={el} />;
             })}
         </tbody>
       </table>
